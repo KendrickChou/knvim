@@ -14,6 +14,29 @@ return {
 					},
 				},
 			},
+			highlights = {
+				fill = {
+					bg = '#2d353b',
+				},
+				background = {
+					bg = '#2d353b',
+				},
+				-- tab = {
+				-- 	fg = '#2d353b',
+				-- 	bg = '#2d353b',
+				-- },
+				tab_close = {
+					fg = '#2d353b',
+					bg = '#2d353b',
+				},
+				close_button = {
+					bg = '#2d353b',
+				},
+				separator = {
+					fg = '#aaaaaa',
+					bg = '#2d353b',
+				},
+			},
 		},
 	},
 }

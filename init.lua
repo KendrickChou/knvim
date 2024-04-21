@@ -29,6 +29,7 @@ vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
+vim.o.termguicolors = true
 
 -- [[ Setting options ]]
 require 'options'
@@ -43,5 +44,9 @@ require 'lazy-bootstrap'
 require 'lazy-plugins'
 
 require 'icons'
+
+-- vim.cmd.colorscheme 'tokyonight'
+-- vim.cmd.colorscheme 'catppuccin-mocha'
+vim.cmd.colorscheme 'everforest'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=4 sts=4 sw=4 et
