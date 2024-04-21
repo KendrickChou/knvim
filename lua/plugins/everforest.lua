@@ -10,7 +10,7 @@ return {
 	-- 	end,
 	-- },
 	{
-		'sannihe/everforest',
+		'sainnhe/everforest',
 		opts = {},
 		lazy = false,
 		priority = 1000,
