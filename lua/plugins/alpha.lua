@@ -8,7 +8,6 @@ return {
 	-- },
 	{
 		'goolord/alpha-nvim',
-		priority = 2000,
 		config = function()
 			local dashboard = require 'alpha.themes.dashboard'
 			dashboard.section.header.val = {

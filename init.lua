@@ -45,8 +45,10 @@ require 'lazy-plugins'
 
 require 'icons'
 
+-- Do not change colorscheme here!
+-- Because this will clear all highlight groups, which are added by other plugins
 -- vim.cmd.colorscheme 'tokyonight'
 -- vim.cmd.colorscheme 'catppuccin-mocha'
-vim.cmd.colorscheme 'everforest'
+-- vim.cmd.colorscheme 'everforest'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=4 sts=4 sw=4 et
