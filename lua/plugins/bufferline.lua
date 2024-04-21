@@ -33,7 +33,7 @@ return {
 					bg = '#2d353b',
 				},
 				separator = {
-					fg = '#aaaaaa',
+					fg = '#2d353b',
 					bg = '#2d353b',
 				},
 			},
