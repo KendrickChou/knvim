@@ -120,11 +120,12 @@ return {
 					-- code, if the language server you are using supports them
 					--
 					-- This may be unwanted, since they displace some of your code
-					if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
-						map('<leader>th', function()
-							vim.lsp.inlay_hint.enable(0, not vim.lsp.inlay_hint.is_enabled())
-						end, '[T]oggle Inlay [H]ints')
-					end
+					vim.lsp.inlay_hint.enable(true)
+					-- if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
+					-- 	map('<leader>th', function()
+					-- 		vim.lsp.inlay_hint.enable(0, not vim.lsp.inlay_hint.is_enabled())
+					-- 	end, '[T]oggle Inlay [H]ints')
+					-- end
 				end,
 			})
 
@@ -150,6 +151,7 @@ return {
 				pyright = {},
 				rust_analyzer = {},
 				bashls = {},
+				texlab = {},
 
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
