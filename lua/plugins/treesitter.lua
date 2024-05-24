@@ -6,7 +6,7 @@ return {
 			'nvim-treesitter/nvim-treesitter-context',
 		},
 		opts = {
-			ensure_installed = { 'bash', 'c', 'cpp', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'latex', 'make', 'python' },
+			ensure_installed = { 'bash', 'c', 'cpp', 'html', 'lua', 'luadoc', 'vim', 'vimdoc', 'make', 'python' },
 			-- Autoinstall languages that are not installed
 			auto_install = true,
 			highlight = {
