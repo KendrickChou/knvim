@@ -23,25 +23,49 @@ return {
 
 		-- Add your own debuggers here
 		-- 'leoluz/nvim-dap-go',
+		'mfussenegger/nvim-dap-python',
 	},
 	config = function()
 		local dap = require 'dap'
 		local dapui = require 'dapui'
+		local mason_dap = require 'mason-nvim-dap'
+
+		local dap_names = { 'python' }
 
 		require('mason-nvim-dap').setup {
 			-- Makes a best effort to setup the various debuggers with
 			-- reasonable debug configurations
 			automatic_setup = true,
+			automatic_installation = true,
 
 			-- You can provide additional configuration to the handlers,
 			-- see mason-nvim-dap README for more information
-			handlers = {},
+			handlers = {
+				function(config)
+					for _, dap_name in ipairs(dap_names) do
+						local ok, handlers = pcall(require, 'dap.' .. dap_name)
+						if not ok then
+							mason_dap.default_setup(config)
+							return
+						else
+							handlers(config)
+						end
+					end
+				end,
+				-- function(config)
+				-- 	-- all sources with no handler get passed here
+				--
+				-- 	-- Keep original functionality
+				-- 	require('mason-nvim-dap').default_setup(config)
+				-- end,
+			},
 
 			-- You'll need to check that you have the required things installed
 			-- online, please don't ask me how to install them :)
 			ensure_installed = {
 				-- Update this to ensure that you have the debuggers for the langs you want
 				-- 'delve',
+				'python',
 			},
 		}
 
