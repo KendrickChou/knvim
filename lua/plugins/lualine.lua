@@ -3,7 +3,7 @@ local git_icons = require('icons').get 'git'
 local mode = 'mode'
 local filetype = {
 	'filetype',
-	padding = { left = 0, right = 0 },
+	-- padding = { left = 0, right = 0 },
 }
 local filename = {
 	'filename',
@@ -89,8 +89,8 @@ return {
 			sections = {
 				lualine_a = { mode },
 				lualine_b = { branch, diff },
-				lualine_c = { filename, diagnostics },
-				lualine_x = { 'copilot', filetype },
+				lualine_c = { filename, },
+				lualine_x = { 'copilot', filetype, diagnostics  },
 				lualine_y = {},
 				lualine_z = { searchcount, location },
 				-- lualine_a = { 'mode' },
