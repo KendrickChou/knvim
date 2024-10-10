@@ -46,10 +46,10 @@ require('lazy').setup({
 	require 'plugins.neo-tree',
 	require 'plugins.toggleterm',
 	require 'plugins.bufferline',
-	require 'plugins.lualine',
 	require 'plugins.aerial',
 	require 'plugins.flash',
 	require 'plugins.wilder',
+	require 'plugins.lualine',
 	require 'plugins.alpha',
 	require 'plugins.catppuccin',
 	require 'plugins.everforest',
@@ -59,6 +59,7 @@ require('lazy').setup({
 	require 'plugins.vimtex',
 	require 'plugins.chatgpt',
 	require 'plugins.avante',
+	-- require 'plugins.copilot',
 	-- require 'plugins.harpoon'
 	-- require 'plugins.dap.dap',
 
