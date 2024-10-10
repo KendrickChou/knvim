@@ -16,25 +16,52 @@ return {
 			},
 			highlights = {
 				fill = {
-					bg = '#2d353b',
+					bg = {
+						attribute = "bg",
+						highlight = "Normal"
+					},
 				},
 				background = {
-					bg = '#2d353b',
+					bg = {
+						attribute = "bg",
+						highlight = "Normal"
+					}
 				},
-				-- tab = {
-				-- 	fg = '#2d353b',
-				-- 	bg = '#2d353b',
-				-- },
+				tab = {
+					fg = {
+						attribute = "fg",
+						highlight = "Normal"
+					},
+					bg = {
+						attribute = "bg",
+						highlight = "Normal"
+					}
+				},
 				tab_close = {
-					fg = '#2d353b',
-					bg = '#2d353b',
+					fg = {
+						attribute = "fg",
+						highlight = "Normal"
+					},
+					bg = {
+						attribute = "bg",
+						highlight = "Normal"
+					}
 				},
 				close_button = {
-					bg = '#2d353b',
+					bg = {
+						attribute = "bg",
+						highlight = "Normal"
+					}
 				},
 				separator = {
-					fg = '#2d353b',
-					bg = '#2d353b',
+					fg = {
+						attribute = "fg",
+						highlight = "Normal"
+					},
+					bg = {
+						attribute = "bg",
+						highlight = "Normal"
+					}
 				},
 			},
 		},

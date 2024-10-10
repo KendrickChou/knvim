@@ -57,6 +57,7 @@ require('lazy').setup({
 	require 'plugins.smartyank',
 	require 'plugins.markdown-preview',
 	require 'plugins.vimtex',
+	require 'plugins.chatgpt',
 	-- require 'plugins.harpoon'
 	-- require 'plugins.dap.dap',
 
