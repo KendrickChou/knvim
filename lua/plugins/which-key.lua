@@ -23,6 +23,8 @@ return {
 			local wk = require('which-key')
 			-- Document existing key chains
 			wk.add({
+				{ '<leader>a', group = '[A]vante' },
+				{ '<leader>a_', hidden = true },
 				{ '<leader>c', group = '[C]hatGPT' },
 				{ '<leader>c_', hidden = true },
 				{ '<leader>d', group = '[D]ocument' },
