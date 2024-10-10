@@ -57,6 +57,7 @@ require('lazy').setup({
 	require 'plugins.smartyank',
 	require 'plugins.markdown-preview',
 	require 'plugins.chatgpt'
+	require 'plugins.avante'
 	-- require 'plugins.vimtex',
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
