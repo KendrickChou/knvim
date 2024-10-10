@@ -3,7 +3,7 @@ local git_icons = require('icons').get 'git'
 local mode = 'mode'
 local filetype = {
 	'filetype',
-	padding = { left = 0, right = 0 },
+	-- padding = { left = 0, right = 0 },
 }
 local filename = {
 	'filename',
@@ -29,7 +29,7 @@ local diagnostics = {
 	colored = true,
 	update_in_insert = false,
 	always_visible = false,
-	padding = { left = 0, right = 1 },
+	-- padding = { left = 0, right = 1 },
 }
 
 local diff = {
@@ -93,8 +93,8 @@ return {
 			sections = {
 				lualine_a = { mode },
 				lualine_b = { branch, diff },
-				lualine_c = { filename, diagnostics },
-				lualine_x = { 'copilot', filetype },
+				lualine_c = { filename,  },
+				lualine_x = { 'copilot', filetype, diagnostics },
 				lualine_y = {},
 				lualine_z = { searchcount, location },
 				-- lualine_a = { 'mode' },
