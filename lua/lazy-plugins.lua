@@ -56,7 +56,7 @@ require('lazy').setup({
 	require 'plugins.colorizer',
 	require 'plugins.smartyank',
 	require 'plugins.markdown-preview',
-	require 'plugins.chatgpt'
+	require 'plugins.chatgpt',
 	require 'plugins.avante'
 	-- require 'plugins.vimtex',
 
