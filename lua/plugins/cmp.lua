@@ -122,6 +122,13 @@ return {
 					--  This will auto-import if your LSP supports it.
 					--  This will expand snippets if the LSP sent a snippet.
 					-- ['<C-y>'] = cmp.mapping.confirm { select = true },
+					['<Enter>'] = cmp.mapping(function(fallback)
+						if cmp.visible() and has_words_before() then
+							cmp.confirm { select = true }
+						else
+							fallback()
+						end
+					end, { 'i', 's' }),
 
 					['<Tab>'] = cmp.mapping(function(fallback)
 						if cmp.visible() and has_words_before() then
