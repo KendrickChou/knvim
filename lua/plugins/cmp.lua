@@ -123,8 +123,9 @@ return {
 					--  This will expand snippets if the LSP sent a snippet.
 					-- ['<C-y>'] = cmp.mapping.confirm { select = true },
 					['<Enter>'] = cmp.mapping(function(fallback)
-						if cmp.visible() and has_words_before() then
+						if cmp.visible() and has_words_before() and vim.g.tab_pressed then
 							cmp.confirm { select = true }
+							vim.g.tab_pressed = false
 						else
 							fallback()
 						end
@@ -133,6 +134,7 @@ return {
 					['<Tab>'] = cmp.mapping(function(fallback)
 						if cmp.visible() and has_words_before() then
 							cmp.select_next_item()
+							vim.g.tab_pressed = true
 						elseif luasnip.expand_or_locally_jumpable() then
 							vim.fn.feedkeys(t '<Plug>luasnip-expand-or-jump')
 						else
