@@ -44,6 +44,18 @@ return {
 						require('copilot').setup {
 							suggestion = { enabled = false },
 							panel = { enabled = false },
+							filetypes = {
+								yaml = false,
+								markdown = false,
+								help = false,
+								gitcommit = false,
+								gitrebase = false,
+								hgcommit = false,
+								svn = false,
+								cvs = false,
+								tex = false,
+								['.'] = false,
+							},
 						}
 					end,
 				},
@@ -96,7 +108,6 @@ return {
 						border = 'rounded',
 					},
 				},
-
 
 				-- documentation = {
 				-- 	border = border 'CmpDocBorder',

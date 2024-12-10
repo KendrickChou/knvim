@@ -120,7 +120,11 @@ return {
 					-- code, if the language server you are using supports them
 					--
 					-- This may be unwanted, since they displace some of your code
-					vim.lsp.inlay_hint.enable(true)
+					if vim.bo.filetype == 'tex' then
+						vim.lsp.inlay_hint.enable(false)
+					else
+						vim.lsp.inlay_hint.enable(true)
+					end
 					-- if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
 					-- 	map('<leader>th', function()
 					-- 		vim.lsp.inlay_hint.enable(0, not vim.lsp.inlay_hint.is_enabled())
