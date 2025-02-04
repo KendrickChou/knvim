@@ -65,6 +65,7 @@ return {
 			-- Adds other completion capabilities.
 			--  nvim-cmp does not ship with all sources by default. They are split
 			--  into multiple repos for maintenance purposes.
+			'hrsh7th/cmp-buffer',
 			'hrsh7th/cmp-nvim-lsp',
 			'hrsh7th/cmp-path',
 			'onsails/lspkind.nvim',
@@ -203,6 +204,7 @@ return {
 					{ name = 'luasnip' },
 					{ name = 'path' },
 					{ name = 'copilot' },
+                    { name = 'buffer' },
 				},
 			}
 		end,

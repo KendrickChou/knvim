@@ -51,7 +51,7 @@ require('lazy').setup({
 	require 'plugins.wilder',
 	require 'plugins.lualine',
 	require 'plugins.alpha',
-	-- require 'plugins.catppuccin',
+	require 'plugins.catppuccin',
 	require 'plugins.everforest',
 	require 'plugins.colorizer',
 	require 'plugins.smartyank',
@@ -59,6 +59,7 @@ require('lazy').setup({
 	require 'plugins.vimtex',
 	require 'plugins.chatgpt',
 	require 'plugins.avante',
+	require 'plugins.diffview',
 	-- require 'plugins.copilot',
 	-- require 'plugins.harpoon'
 	-- require 'plugins.dap.dap',
