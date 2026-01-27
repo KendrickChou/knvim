@@ -7,7 +7,10 @@ return {
 			'nvim-treesitter/nvim-treesitter-context',
 		},
 		config = function(_, opts)
-			require('nvim-treesitter').install({'rust', 'bash', 'c', 'cpp', 'lua', 'python', 'make', 'latex', 'vim', 'vimdoc', 'markdown'})
+			require('nvim-treesitter.configs').setup({
+				ensure_installed = {'rust', 'bash', 'c', 'cpp', 'lua', 'python', 'make', 'latex', 'vim', 'vimdoc', 'markdown'},
+				highlight = {enable = true},
+			})
 		end,
 	},
 }

@@ -60,6 +60,7 @@ require('lazy').setup({
 	require 'plugins.chatgpt',
 	require 'plugins.avante',
 	require 'plugins.diffview',
+	require 'plugins.wakatime',
 	-- require 'plugins.copilot',
 	-- require 'plugins.harpoon'
 	-- require 'plugins.dap.dap',
